@@ -98,12 +98,12 @@ animated gifs without breaking them.
 Create a new Imager::GIF object from a sequence of images. One would
 probably want to use C<read> method instead.
 
-=item C<read(file => $filename)> (class method)
+=item C<< read(file => $filename) >> (class method)
 
 Reads an animated gif from the specified location, returns a newly
 created Imager::GIF object.
 
-=item C<write(file => $filename)>
+=item C<< write(file => $filename) >>
 
 Writes the invocant object to a speficied file.
 
@@ -114,11 +114,11 @@ animated gifs.
 
 =back
 
-=TODO
+=head1 TODO
 
 Implement the rest of the transformations (cropping, rotating etc).
 
-=CAVEATS
+=head1 CAVEATS
 
 C<scale()>, given some weird combination of C<xpixels> and/or C<ypixels>
 may produce funny-looking images. Using C<scalefactor> is usually safer.
